@@ -19,7 +19,7 @@ const CompanionIdPage = async ({ params }: CompanionIdPageProps) => {
     return redirectToSignIn();
   }
 
-  const validSubscription = await checkSubscription();
+  const validSubscription = false;
 
   if (!validSubscription) {
     return redirect("/");
